@@ -13,7 +13,8 @@ struct CoreDataProjectApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            FilteringDynamically()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
